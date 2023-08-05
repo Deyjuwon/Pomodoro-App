@@ -1,5 +1,7 @@
 from tkinter import *
 import math
+
+
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -40,8 +42,6 @@ def start_timer():
         title_label.config(text="Work", fg=GREEN)
 
 
-    #count_down(5 * 60)
-
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
 def count_down(count):
 
@@ -60,6 +60,7 @@ def count_down(count):
         for _ in range(math.floor(reps/2)):
             mark += "✔"
         check_marks.config(text=mark)
+        
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Pomodoro")
